@@ -11,10 +11,10 @@ class SingletonLazy2
 {
 protected:
     SingletonLazy2(){
-        cout<<"SingletonBase created"<<endl;
+        cout<<"   SingletonLazy2 created"<<endl;
     };
     ~SingletonLazy2(){
-        cout<<"SingletonBase destoryed"<<endl;
+        cout<<"    SingletonLazy2 destoryed"<<endl;
     };
 private:
     static SingletonLazy2* ptr;
@@ -27,6 +27,5 @@ public:
         }
         return ptr;
     }
-
 };
 SingletonLazy2* SingletonLazy2::ptr=NULL;

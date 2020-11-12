@@ -7,10 +7,10 @@ class SingletonBase
 {
 protected:
     SingletonBase(){
-        cout<<"SingletonBase created"<<endl;
+        cout<<"====SingletonBase created?"<<endl;
     };
     ~SingletonBase(){
-        cout<<"SingletonBase destoryed"<<endl;
+        cout<<"====SingletonBase destoryed?"<<endl;
     };
 private:
     static SingletonBase* ptr;
@@ -21,7 +21,8 @@ public:
         }
         return ptr;
     }
-
+    static int counter;
 };
 
 SingletonBase* SingletonBase::ptr=NULL;
+int SingletonBase::counter = 0;

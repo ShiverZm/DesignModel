@@ -11,10 +11,10 @@ class SingletonHungry
 {
 protected:
     SingletonHungry(){
-        cout<<"SingletonBase created"<<endl;
+        cout<<"SingletonHungry created"<<endl;
     };
     ~SingletonHungry(){
-        cout<<"SingletonBase destoryed"<<endl;
+        cout<<"SingletonHungry destoryed"<<endl;
     };
 private:
     static SingletonHungry* ptr;
@@ -24,6 +24,9 @@ public:
        return ptr;
     }
 
+    static int counter;
+
 };
 
 SingletonHungry* SingletonHungry::ptr=new SingletonHungry;
+int SingletonHungry::counter = 0;
