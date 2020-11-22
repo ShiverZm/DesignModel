@@ -5,3 +5,8 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp
+
+HEADERS += \
+    ifactory.h \
+    proxy_factory.h \
+    real_factory.h
